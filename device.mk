@@ -28,7 +28,8 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Dolby
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml
+    $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
+    $(LOCAL_PATH)/configs/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default-spatializer.xml
 
 # Fingerprint
 TARGET_USES_MFP_DAEMON := true
@@ -68,6 +69,7 @@ PRODUCT_PACKAGES += \
     MarbleCNSettingsProviderOverlay \
     MarbleCNWifiOverlay \
     MarbleCNWifiMainlineOverlay \
+    MarbleDolbyOverlay \
     MarbleFrameworksOverlay \
     MarbleGLSettingsOverlay \
     MarbleGLSettingsProviderOverlay \
